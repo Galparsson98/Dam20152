@@ -1,8 +1,6 @@
   window.onload= function (){
     var kom1= document.getElementById("Combo1");
-      var kom2= document.getElementById("Combo2");
-      
-  }
+    var kom2= document.getElementById("Combo2");
   var net = new Object();
  
 net.READY_STATE_UNINITIALIZED=0; 
@@ -71,15 +69,24 @@ function muestraContenido() {
   if(peticion_http.readyState == 4) {
     if(peticion_http.status == 200) {
       alert(peticion_http.responseText);
+      function descargararchivos()
+        {
+            var Provincias, municipios;
+            Provincias= cargaContenido("servidor\cargaProvinciaXML.php","get",null);
+            Provincias.onchange 
+                        municipios= cargaContenido("servidor\cargaMunicipioXML.php","get",muestraContenido)
+                                
+        }
+      }
     }
   }
     function cargaContenido(url, metodo, funcion) {
   peticion_http = inicializa_xhr();
- 
+    
   if(peticion_http) {
     peticion_http.onreadystatechange = funcion;
     peticion_http.open(metodo, url, true);
     peticion_http.send(null);
   }
 }
-}
+        }
