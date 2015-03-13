@@ -1,13 +1,33 @@
 //objeto global.
+var APP = APP || {};
 $.document.ready(function objglobal(){
-    var caracteristicas =function objglobal ();
+    var caracteristicas =function objglobal (){
     var cosa1 =$('caracteristicas eliminados');
     var cosa2 =$('caracteristicas contenedor');
     var cosa3 =$('caracteristicas botones');
-
+    }
     urlBase= '/php/getcards.php';
 
 
+}
+var ima1= $('<img/>',{ src='img/cat.png');
+var ima2= $('<img/>',{ src='img/dog.png');
+         var filak =$('#filas');
+        var kolumna = $('#columnas');
+var imagenes = function imagen(ima1, ima2){
+                      var i=0;
+
+            for (i=0, i<filak; i++)
+                      {
+                        }
+                 for (i=0, i<kolumna; i++)
+                      {
+                           }
+function avisaanet (datos) {
+       console.log(datos);
+
+}
+}
 
 //Usar "use strict".
 
