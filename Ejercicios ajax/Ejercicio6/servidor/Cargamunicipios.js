@@ -53,7 +53,7 @@ net.CargadorContenidos.prototype = {
         this.onload.call(this);
       }
       else {
-        this.onerror.call(this);
+        this.onerror.call(this); 
       }
     }
   },
