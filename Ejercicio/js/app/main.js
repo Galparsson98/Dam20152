@@ -1,4 +1,6 @@
+APP || {};
 $.document.ready(function objglobal() {
+        "Use strict";
             var cosa1 = $('caracteristicas eliminados');
             var cosa2 = $('caracteristicas contenedor');
             var cosa3 = $('caracteristicas botones');
@@ -34,8 +36,8 @@ $.document.ready(function objglobal() {
             function pasodetiempo() {
 
             }
-
         }
+
         //Usar "use strict".
 
         //esperar a que el DOM este cargado.
